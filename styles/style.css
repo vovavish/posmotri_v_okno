@@ -184,6 +184,10 @@ ol {
   padding: 6px 0;
 }
 
+.more-button:focus-visible {
+  outline-offset: -2px;
+}
+
 .content__video-card {
   display: flex;
 }
@@ -209,7 +213,7 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
-  width: 411px;
+  width: 400px;
   overflow-y: scroll;
 }
 
@@ -252,8 +256,8 @@ ol {
 }
 
 .content__video-card-description-container {
-  max-width: 195px;
   overflow: hidden;
+  max-width: 180px;
 }
 
 .content__video-card-title {
