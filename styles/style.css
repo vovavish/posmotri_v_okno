@@ -209,11 +209,13 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
+  width: 411px;
   overflow-y: scroll;
 }
 
 .content__list-item {
   padding-bottom: 30px;
+  width: 100%;
 }
 
 .content__list-item:last-child {
@@ -249,11 +251,19 @@ ol {
   justify-content: space-between;
 }
 
+.content__video-card-description-container {
+  max-width: 195px;
+  overflow: hidden;
+}
+
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
 }
 
 .content__video-card-description {
@@ -264,4 +274,6 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
